@@ -1,0 +1,28 @@
+.bold {
+    color: #943f3f;
+    font-weight: bold;
+}
+p {
+    font-size: 25px;
+}
+#gray {
+    color: gray;
+}
+input[type = text]{
+    color: magenta;
+}
+input[type = password]{
+    color: green;
+}
+h3,h5 {
+    font-family: 'Mukta Mahee', sans-serif;
+}
+ul li {
+    color: red;
+}
+ul > li{
+    font-size: 15px;    
+}
+p.hover {
+    color: magenta;
+}
