@@ -1,0 +1,26 @@
+
+
+<div class="container">
+  <div class="row text-center" id="text_question">
+    <h1>{{question.questionName}}</h1>
+  </div>
+  <div class="row">
+    <div id="question_result" class="col-xs-12 question_result" style="display : block">
+      <div class="result_bar">
+        <div id="question_result_no" class="question_result_no" style="width: 50.00%;">
+          <span>Like: {{question.yes}}</span>
+          <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+        </div>
+        <div id="question_result_yes" class="question_result_yes" style="width: 50.00%;">
+          <span>Dislike: {{question.no}}</span>
+          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row text-center">
+    <form action="/answer/{{question.id}}" method="post">
+      <button type="submit" name="btn_xemcauhoikhac" value="other" class="btn btn-success btn-lg btn_xemcauhoikhac">Xem câu hỏi khác</button>
+    </form>
+  </div>
+</div>

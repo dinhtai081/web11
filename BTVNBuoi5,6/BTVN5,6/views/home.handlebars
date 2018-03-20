@@ -1,0 +1,24 @@
+
+<div class="container">
+  <h1 class="text-center" id="text_question">{{question.questionName}}</h1>
+  <form action="/answer/{{question.id}}" method="post">
+    <div class="row text-center" id="btn_answer">
+      <div class="col-md-6">
+        <button type="submit" class="btn btn-danger btn-lg" name="answer" value="yes">
+          <span class="glyphicon glyphicon-thumbs-down"></span>
+           Yes 
+         </button>
+      </div>
+      <div class="col-md-6">
+        <button type="submit" class="btn btn-primary btn-lg" name="answer" value="no">
+          <span class="glyphicon glyphicon-thumbs-up"></span>
+           No
+         </button>
+      </div>
+    </div>
+    <div class="row text-center" id="btn_chuyen">
+      <button type="submit" class="btn btn-default" name="answer" value="check">Kết quả vote</button>
+      <button type="submit" class="btn btn-default" name="answer" value="other">Câu hỏi khác</button>
+    </div>
+  </form>
+</div>
