@@ -1,0 +1,112 @@
+<table class="playerTable table table-striped">
+    <thead>
+        <tr>
+            <th> </th>
+            <th> {{player1}}</th>
+            <th> {{player2}}</th>
+            <th> {{player3}}</th>
+            <th> {{player4}}</th>
+        </tr>
+    </thead>
+    <tbody style="font-weight: bold">
+        <tr>
+            <td style="background-color: #BF1363"> SumScore</td>
+            <td style="background-color: #BF1363"> {{player2}}</td>
+            <td style="background-color: #BF1363"> {{player3}}</td>
+            <td style="background-color: #BF1363"> {{player4}}</td>
+            <td style="background-color: #BF1363"> {{player4}}</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td>Round1</td>
+            <td >
+                <input name="round1.1" style="width: 60px ; border-radius: 5px" type="text" >
+            </td>
+            <td >
+                <input name="round1.2" style="width: 60px ; border-radius: 5px" type="text" >
+            </td>
+            <td>
+                <input name="round1.3" style="width: 60px ; border-radius: 5px" type="text" >
+            </td>
+            <td>
+                <input name="round1.4" style="width: 60px ; border-radius: 5px" type="text" >
+            </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td>Round2</td>
+            <td >
+                <input name="round2.1" style="width: 60px ; border-radius: 5px" type="text" >
+            </td>
+            <td >
+                <input name="round2.2" style="width: 60px ; border-radius: 5px" type="text" >
+            </td>
+            <td>
+                <input name="round2.3" style="width: 60px ; border-radius: 5px" type="text" >
+            </td>
+            <td>
+                <input name="round2.4" style="width: 60px ; border-radius: 5px" type="text" >
+            </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td>Round3</td>
+            <td >
+                <input name="round3.1" style="width: 60px ; border-radius: 5px" type="text" >
+            </td>
+            <td >
+                <input name="round3.2" style="width: 60px ; border-radius: 5px" type="text" >
+            </td>
+            <td>
+                <input name="round3.3" style="width: 60px ; border-radius: 5px" type="text" >
+            </td>
+            <td>
+                <input name="round3.4" style="width: 60px ; border-radius: 5px" type="text" >
+            </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td>Round4</td>
+            <td >
+                <input name="round4.1" style="width: 60px ; border-radius: 5px" type="text" >
+            </td>
+            <td >
+                <input name="round4.2" style="width: 60px ; border-radius: 5px" type="text" >
+            </td>
+            <td>
+                <input name="round4.3" style="width: 60px ; border-radius: 5px" type="text" >
+            </td>
+            <td>
+                <input name="round4.4" style="width: 60px ; border-radius: 5px" type="text" >
+            </td>
+        </tr>
+    </tbody>
+</table>
+<hr style="border: 1px solid #BF1363;">
+<button class=" btn btn-primary" onclick="add()" style="margin-left:40% ;margin-right:90%; width:180px ; height: 40px; background-color: #BF1363 ; border: none">Add round</button>
+
+<script>
+    i = 4;
+    function add(){
+        i++;
+        $('.playerTable').append(`<tbody><tr>
+            <td>${'Round'+i}</td>
+            <td >
+                <input style="width: 60px ; border-radius: 5px" type="text" >
+            </td>
+            <td >
+                <input style="width: 60px ; border-radius: 5px" type="text" >
+            </td>
+            <td>
+                <input style="width: 60px ; border-radius: 5px" type="text" >
+            </td>
+            <td>
+                <input style="width: 60px ; border-radius: 5px" type="text" >
+            </td>
+        </tr></tbody>`)
+    }
+</script>
